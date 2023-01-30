@@ -1,0 +1,310 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(237, 151, 166);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5% 10%;
+}
+
+header{
+padding 2rem 1rem;
+width: 80%;
+margin: 0 auto;
+
+}
+
+header h1{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-left: .5rem;
+
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+input , button , button:active{
+    border: none;
+    border-style: none;
+    transform: none;
+    background: none;
+}
+
+.new-task-input{
+    padding: 1rem;
+    background-color:whitesmoke;
+    border-radius:1.5rem;
+    width: 70%;
+    font-size: 1.3rem;
+    color:black;
+}
+
+.new-task-input::placeholder{
+    padding-left: 1rem;
+}
+
+.new-input-submit{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: rgb(27, 23, 23);
+    margin-right: 110px;
+
+}
+
+
+section{
+    max-width: 80%;
+    width: 90%;
+    margin:0 auto;
+}
+
+section h2{
+    margin: 5% 0 3% 0;
+    text-align:center;
+    font-size: 2rem;
+}
+
+#task{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+}
+
+.task{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius:.8rem;
+    width: 90%;
+    background-color:whitesmoke;
+    font-size: 1.3rem;
+    color:rgba(48, 48, 43, 0.825);
+    margin: 1% 0;
+
+}
+
+
+.content{
+    width: 80%;
+}
+
+  
+
+
+.actions{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+
+.text{
+    padding: 1rem;
+    border-radius:1rem;
+    width: 85%;
+    font-size: 1.3rem;
+    color:black;
+
+}
+
+.text:active{
+    border: none;
+}
+
+.task .content .text:not(:read-only){
+    color: blueviolet;
+}
+
+.edit{
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: blueviolet;
+
+
+}
+
+.delete{
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: blueviolet;
+
+
+}
+
+
+@media (max-width:910Px) {
+    
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 5% 2% ;
+}
+
+.text{
+    padding: 1rem;
+    background-color: whitesmoke;
+    border-radius:1rem;
+    width: 90%;
+    font-size: 1.3rem;
+    color:black;
+
+}
+
+
+}
+
+@media (max-width:680px) {
+
+    header{
+        padding 1rem .5rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    header h1{
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        margin-left: .5rem;
+    
+    }
+
+
+    button{
+        border: none;
+        border-collapse: collapse;
+        border-style: none;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+
+
+    .new-task-input{
+        padding: .85rem;
+        background-color: whitesmoke;
+        width: 90%;
+        font-size: .85rem;
+        color: black;
+    }
+    
+    .new-task-input::placeholder{
+        padding-left: .8rem;
+    }
+    
+    .new-input-submit{
+        text-align: center;
+        padding: .85rem;
+        font-size: .85rem;
+        font-weight: 700;
+        color: rgb(27, 23, 23);
+        margin-right: 2rem;
+    }
+    
+
+    section{
+        padding 1rem .5rem;
+        width: 80%;
+        margin:0 auto;
+    }
+    
+    section h2{
+        margin: 5% 0 3% 0;
+        text-align:center;
+        font-size: 1rem;
+    }
+    
+
+    #task{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3%;
+    }
+    
+    .task{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius:.5rem;
+        width: 100%;
+        background-color:whitesmoke;
+        font-size:.85rem;
+        color: black;
+        margin: 2% 0;
+    
+    }
+    
+
+    .content{
+        width: 100%;
+    }
+    
+
+    .actions{
+        display: flex;
+        flex-direction: row;
+    
+    }
+    
+    
+    .text{
+        padding: .85rem;
+        border-radius:.5rem;
+        width: 85%;
+        font-size: .85rem;
+        color:rgba(48, 48, 43, 0.825);
+    
+    }
+    
+    .text:active{
+        border: none;
+    }
+    
+
+    .task .content .text:not(:read-only){
+        color: blueviolet;
+    }
+    
+
+    .edit{
+        padding: .4rem;
+        font-size: .75rem;
+        font-weight: 700;
+        color: blueviolet;
+    
+    }
+    
+    .delete{
+        padding: .4rem;
+        font-size:.75rem;
+        font-weight: 700;
+        color: blueviolet;
+    
+    }
+    
+    
+}
